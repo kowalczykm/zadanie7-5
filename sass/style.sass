@@ -1,0 +1,513 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans')
+* 
+  box-sizing: border-box
+
+
+body 
+  margin: 0
+  font-family: Open Sans, sans-serif
+
+$blue: rgba(52, 152, 219, 1.0)
+$white: #fff
+
+.row:before,
+.row:after 
+  content: ""
+  display: table
+  clear: both
+
+
+.col-1 
+  width: 8.33%
+
+
+.col-2 
+  width: 16.66%
+
+
+.col-3 
+  width: 25%
+
+
+.col-4  
+  width: 33.33% 
+ 
+
+.col-5  
+  width: 41.66% 
+ 
+
+.col-6  
+  width: 50% 
+ 
+
+.col-7  
+  width: 58.33% 
+ 
+
+.col-8  
+  width: 66.66% 
+ 
+
+.col-9  
+  width: 75% 
+ 
+
+.col-10  
+  width: 83.33% 
+ 
+
+.col-11  
+  width: 91.66% 
+ 
+
+.col-12  
+  width: 100% 
+ 
+
+.col-offset-0  
+  margin-left: 0 
+ 
+
+.col-offset-1  
+  margin-left: 8.33% 
+ 
+
+.col-offset-2  
+  margin-left: 16.66% 
+ 
+
+.col-offset-3  
+  margin-left: 25% 
+ 
+
+.col-offset-4  
+  margin-left: 33.33% 
+ 
+
+.col-offset-5  
+  margin-left: 41.66% 
+ 
+
+.col-offset-6  
+  margin-left: 50% 
+ 
+
+.col-offset-7  
+  margin-left: 58.33% 
+ 
+
+.col-offset-8  
+  margin-left: 66.66% 
+ 
+
+.col-offset-9  
+  margin-left: 75% 
+ 
+
+.col-offset-10  
+  margin-left: 83.33% 
+ 
+
+.col-offset-11  
+  margin-left: 91.66% 
+ 
+
+@media (max-width: 767px)  
+  .col-s-1  
+    width: 8.33% 
+   
+  .col-s-2  
+    width: 16.66% 
+   
+  .col-s-3  
+    width: 25% 
+   
+  .col-s-4  
+    width: 33.33% 
+   
+  .col-s-5  
+    width: 41.66% 
+   
+  .col-s-6  
+    width: 50% 
+   
+  .col-s-7  
+    width: 58.33% 
+   
+  .col-s-8  
+    width: 66.66% 
+   
+  .col-s-9  
+    width: 75% 
+   
+  .col-s-10  
+    width: 83.33% 
+   
+  .col-s-11  
+    width: 91.66% 
+   
+  .col-s-12  
+    width: 100% 
+   
+ 
+
+[class*="col-"]  
+  float: left 
+  min-height: 1px 
+ 
+.container  
+  max-width: 1200px 
+  margin: 0 auto 
+
+/*HEADER */
+
+
+header  
+  background: #313234 
+  height: 50px 
+ 
+
+nav 
+  ul  
+    list-style-type: none 
+    margin: 0 
+    float: right 
+    padding: 0 30px 0 0 
+  
+  img  
+    padding: 10px 0  
+
+nav ul li  
+  display: inline-block 
+  line-height: 50px 
+  padding: 0 20px 
+ 
+
+nav ul li a  
+  text-decoration: none 
+  text-transform: uppercase 
+  font-weight: bold 
+  color: $white
+  &:hover
+    color: $blue
+    
+
+@media (max-width: 767px)  
+  nav ul li  
+    display: block 
+    text-align: center 
+    padding: 0 
+   
+  nav ul li a  
+    width: 100% 
+    display: block 
+    &:hover 
+      color: $blue
+      background: green 
+   
+  nav img  
+    display: block 
+    margin: 0 auto 
+   
+  header  
+    height: 200px 
+   
+  header nav ul  
+    float: none 
+    padding: 0 
+   
+ 
+
+
+/*HERO*/
+
+.hero  
+  background-image: url("https://images.pexels.com/photos/38892/pexels-photo-38892.jpeg?w=940&h=650&auto=compress&cs=tinysrgb") 
+  height: 450px 
+  background-size: cover 
+  position: relative 
+ 
+
+.slogan  
+  background: rgba(149, 165, 166, 0.5) 
+  width: 50% 
+  height: 120px 
+  padding: 10px 
+  text-transform: uppercase 
+  color: red 
+  font-weight: 500 
+  font-size: 24px 
+  position: absolute 
+  transform: translate(100%, 165px) 
+ 
+
+.slogan-extra  
+  font-weight: 900 
+ 
+
+/*SEKCJA KORZYSCI*/
+
+.about .col-4  
+  float: left 
+  Min-height: 1px 
+  text-align: center 
+ 
+
+.bla-row .fa  
+  color: white 
+  text-align: center 
+  background: black 
+  padding: 12px 
+  margin: 0 0 20px 0 
+  border-radius: 16px 
+ 
+
+.bla-row  
+  margin: 40px auto 
+ 
+
+.about .col-4 h3  
+  text-transform: uppercase 
+  font-size: 18px 
+  font-weight: 900 
+ 
+
+.light:hover 
+  i  
+    color: $blue
+    cursor: pointer 
+    transition-duration: 0.3s 
+
+  h3  
+    color: $blue
+    cursor: pointer 
+    transition-duration: 0.3s 
+ 
+
+.col-12  
+  text-align: center 
+ 
+
+.col-12 h1  
+  text-transform: uppercase 
+  font-weight: 900 
+ 
+
+@media (max-width: 767px)  
+  .about .col-s-12  
+    float: none 
+    margin: 3% auto 
+   
+ 
+
+
+/*GALERIA*/
+
+.gallery  
+  margin: 50px auto 0 auto 
+  text-align: center 
+ 
+
+.gallery [class*="col-"]  
+  position: relative 
+ 
+
+.gallery 
+  img  
+    float: left 
+    width: 100% 
+    margin: 0 
+    height: 30vh 
+    display: block 
+    object-fit: cover 
+ 
+  .col-2  
+    position: relative 
+ 
+
+.layer  
+  position: absolute 
+  width: 100% 
+  height: 100% 
+  opacity: 0 
+  transition: .3s 
+  padding-top: 70px 
+  &:hover 
+    background-color: rgba(0, 0, 0, 0.5) 
+    background-size: cover 
+    cursor: pointer 
+    opacity: 1 
+    display: inline-block 
+
+
+.layer i.fa  
+  background-color: $white 
+  border-radius: 5px 
+  font-size: 20px 
+  text-align: center 
+ 
+
+@media (max-width: 767px)  
+  .layer  
+    position: absolute 
+    width: 100% 
+    height: 100% 
+    opacity: 1 
+    transition: 0 
+    padding-top: 70px 
+   
+  footer  
+    text-align: center 
+   
+ 
+
+
+/*ZESPOL*/
+
+.people  
+  margin: 20px auto 
+  padding: 0 20% 
+ 
+
+.row .col-3  
+  display: inline-block 
+  position: relative 
+ 
+
+.people .cover  
+  position: absolute 
+  top: 0 
+  right: 0 
+  bottom: 0 
+  left: 0 
+  background: rgba(0, 0, 0, 0.7) 
+  opacity: 0 
+  transition: .5s 
+  height: 150px 
+  border-radius: 50% 
+  width: 150px 
+ 
+
+.col-3 .cover:hover  
+  opacity: 1 
+ 
+
+.cover .icons  
+  text-align: center 
+  height: 50px 
+  color: white 
+  padding: 40% 0 40% 0 
+ 
+
+.col-3 
+  img  
+    border-radius: 50% 
+  .name  
+    margin: 20px 
+    font-size: 20px 
+    color: black 
+    font-weight: 900 
+ 
+
+@media (max-width: 767px)  
+  .people .cover  
+    opacity: 1 
+    background: none 
+    margin: 0 auto 
+   
+  .people  
+    margin: 0 
+    padding: 20px 0 
+   
+  .people .row .col-s-6  
+    text-align: center 
+   
+ 
+
+
+/*SEKCJA Z OBRAZKIEM*/
+
+.obrazek  
+  height: auto 
+  background: rgba(149, 165, 166, 1.0) 
+  margin: 0 auto 
+ 
+
+.obrazek 
+  img  
+    float: right 
+    width: 100% 
+    padding: 15% 10% 0 10% 
+    margin: 0 
+  h1  
+    font-weight: 900 
+    font-size: 30px 
+    text-align: left 
+    text-transform: uppercase 
+  .col-5  
+    font-style: italic 
+    padding: 0 10px 
+ 
+
+
+/*LICZBY*/
+
+.liczby  
+  width: 100% 
+  margin: 5% auto 
+ 
+
+.liczby .col-3  
+  text-align: center 
+ 
+
+.liczby .col-3 
+  h1  
+    font-size: 25px 
+    font-weight: bold 
+    margin: 8px 0 
+ 
+
+  span  
+    color: blue 
+    font-weight: bold 
+    text-transform: uppercase 
+ 
+
+
+/*STOPKA*/
+
+footer  
+  background: #333300 
+  height: auto 
+ 
+
+footer 
+  .row  
+    padding: 0 5% 2% 5% 
+    color: $white 
+  h1  
+    font-weight: bold 
+    text-transform: uppercase 
+    font-size: 20px 
+  span  
+    font-weight: bold 
+  .fa  
+    color: white 
+    background: blue 
+    padding: 3px 
+    margin: 3px 
+  .row .col-4 .row  
+    padding: 0 
+ 
+
+
+/*copyright*/
+
+.copy  
+  color: $white 
+  background: black 
+  text-align: center 
+  padding: 10px 
+ 
